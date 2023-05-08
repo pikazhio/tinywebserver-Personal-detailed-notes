@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
 
 //创建数据库连接池
 	connection_pool *connPool = connection_pool::GetInstance(); //创建连接池
-	connPool->init("localhost", "root", "W1369y5z944!", "tiny", 3306, 8); //初始化连接池
+	connPool->init("localhost", "root", "root", "root", 3306, 8); //初始化连接池
 
 //创建线程池
 	threadpool<http_conn> *pool = NULL; 
